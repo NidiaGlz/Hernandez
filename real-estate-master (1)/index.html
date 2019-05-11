@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="" />
+  <meta name="description" content="">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,400,600,700" rel="stylesheet">
+
+  <!-- Ionic Icons -->
+  <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+
+  <title>HERNANDEZ</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <a href="#hero"><img src="assets/images/untitled.png" class="img-fluid navbar-brand header-logo"
+        alt="CS5O 2018-2019 @TEC DE MTY CAMPUS SLP"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="icon ion-md-menu"></i>
+    </button>
+
+  </nav><!-- End navbar -->
+
+  <section id="hero">
+    <div class="container-fluid">
+      <div class="hero-container-desktop">
+        <div class="hero-details">
+          <h1>Larry la planta</h1>
+          <p>A continuación, selecciona cómo te gustaría regar tu planta</p>
+          <form action = "larry_output.php" method="POST">
+              <h4>INTERVALO:</h4>
+              <select name = "intervalo" required>
+                  <option value="minutos">Minutos</option>
+                  <option value="segundos">Segundos</option>
+              </select>
+              <h4>CANTIDAD:</h4>
+              <input type="number" name="cantidad" min="1" max="1000">
+              <br><br>
+              <button type = submit name = "submit">¡VENGA!</button>   
+          </form> 
+        </div>
+        <img src="assets/images/desktop-hero.jpg" class="img-fluid desktop-hero"
+          alt="https://unsplash.com/photos/B0aCvAVSX8E">
+      </div><!-- End hero container desktop -->
+    </div><!-- End container fluid -->
+
+    
+  </section><!-- End hero -->
+
+ 
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
